@@ -1,5 +1,5 @@
-import { NextPageWithLayout } from '@/model';
-import { MainLayout } from 'components/layout';
+import { NextPageWithLayout } from '@/models';
+import { MainLayout } from '@/components/layout';
 import React from 'react';
 
 type Props = {};

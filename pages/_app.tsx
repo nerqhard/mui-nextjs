@@ -1,9 +1,9 @@
-import { AppPropsWithLayout } from '@/model';
+import { AppPropsWithLayout } from '@/models';
 import {createEmotionCache, theme} from '@/utils';
 import {CacheProvider, EmotionCache} from '@emotion/react';
 import CssBaseline from '@mui/material/CssBaseline';
 import {ThemeProvider} from '@mui/material/styles';
-import {EmptyLayout} from 'components/layout';
+import {EmptyLayout} from '@/components/layout';
 import type {AppProps} from 'next/app';
 import Head from 'next/head';
 import '../styles/globals.css';

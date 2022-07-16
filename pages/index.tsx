@@ -1,15 +1,14 @@
-import { NextPageWithLayout } from '@/model';
+import { NextPageWithLayout } from '@/models';
 import { Box } from '@mui/system';
-import { HeroSection } from 'components/home';
-import { MainLayout } from 'components/layout';
-import Head from 'next/head';
-import Image from 'next/image';
-import styles from '../styles/Home.module.css';
+import { FeaturedWorks, HeroSection, RecentPosts } from '@/components/home';
+import { MainLayout } from '@/components/layout';
 
 const Home: NextPageWithLayout = () => {
 	return (
 		<Box>
 			<HeroSection />
+			<RecentPosts />
+			<FeaturedWorks />
 		</Box>
 	);
 };

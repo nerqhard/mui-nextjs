@@ -17,6 +17,10 @@ export let theme = createTheme({
 		error: {
 			main: red.A400,
 		},
+		text: {
+			primary: '#21243D',
+			secondary: '#00A8CC'
+		}
 	},
 	components: {
 		MuiContainer: {
@@ -46,7 +50,7 @@ export let theme = createTheme({
 				}
 			},
 			defaultProps: {
-				underline: 'hover'
+				underline: 'none'
 			}
 		},
 		MuiButton: {
@@ -57,6 +61,23 @@ export let theme = createTheme({
 				},
 				style: {
 					color: 'white'
+				}
+			}],
+		},
+		MuiChip: {
+			styleOverrides: {
+				root: {
+					paddingInline: 4
+				}
+			},
+			variants: [{
+				props: {
+					color: 'secondary'
+				},
+				style: {
+					backgroundColor: '#142850',
+					color: 'white',
+					fontSize: '16px'
 				}
 			}],
 		}

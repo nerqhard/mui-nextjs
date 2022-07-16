@@ -1,6 +1,6 @@
-import { LayoutProps } from '@/model';
+import { LayoutProps } from '@/models';
 import { Box, Container, Stack } from '@mui/material';
-import { Footer, Header } from 'components/common';
+import { Footer, Header } from '@/components/common';
 import Link from 'next/link';
 import * as React from 'react';
 
