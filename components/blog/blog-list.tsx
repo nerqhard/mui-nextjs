@@ -42,10 +42,10 @@ export function BlogList() {
 	return (
 		<Box component={'section'} pt={2} pb={4}>
 			<Container>
-				<Typography component='h1' variant='h3' fontWeight='bold'>
+				<Typography component='h1' variant='h3' fontWeight='bold' mb={7}>
 					Blogs
 				</Typography>
-				<Stack pt={7} spacing={4}>
+				<Stack spacing={4}>
 					{blogList.map((blog) => (
 						<Fragment key={blog.id}>
 							<BlogItem blog={blog} />

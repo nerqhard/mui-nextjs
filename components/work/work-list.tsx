@@ -5,9 +5,10 @@ import { WorkCard } from './work-card';
 
 export interface WorkListProps {
 	workList: Work[];
+	isPage?: boolean;
 }
 
-export function WorkList({ workList }: WorkListProps) {
+export function WorkList({ workList, isPage }: WorkListProps) {
 	if (workList.length === 0) return null;
 
 	return (
@@ -15,7 +16,7 @@ export function WorkList({ workList }: WorkListProps) {
 			{workList.map((work) => (
 				<Fragment key={work.id}>
 					<WorkCard work={work} />
-					<Divider sx={{ mt: 2, mb: 4 }} />
+					<Divider sx={{ mt: isPage ? 4 : 2, mb: 4 }} />
 				</Fragment>
 			))}
 		</Box>
