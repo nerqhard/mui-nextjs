@@ -1,4 +1,4 @@
-import { Post } from '@/models';
+import { Blog, Post } from '@/models';
 import { Box, Stack, Typography, Link as MuiLink } from '@mui/material';
 import { Container } from '@mui/system';
 import Link from 'next/link';
@@ -6,20 +6,22 @@ import * as React from 'react';
 import { PostCard } from './post-card';
 
 export function RecentPosts() {
-	const postList: Post[] = [
+	const postList: Blog[] = [
 		{
 			id: 1,
 			title: 'Making a design system from scratch',
-			publishedDate: '1657989568257',
+			publishedDate: '2022-07-17T04:04:51.904Z',
 			tagList: ['Design', 'Pattern'],
+			mdContent: '',
 			description:
 				'Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.',
 		},
 		{
 			id: 2,
 			title: 'Creating pixel perfect icons in Figma',
-			publishedDate: '1657989568257',
+			publishedDate: '2022-07-17T04:04:51.904Z',
 			tagList: ['Figma', 'Icon Design'],
+			mdContent: '',
 			description:
 				'Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.',
 		},

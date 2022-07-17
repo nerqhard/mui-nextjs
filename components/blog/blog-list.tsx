@@ -1,58 +1,39 @@
 import { Blog } from '@/models';
-import { Box, Container, Divider, Stack, Typography } from '@mui/material';
+import {
+	Box,
+	Container,
+	Divider,
+	Link as MuiLink,
+	Stack,
+	Typography,
+} from '@mui/material';
+import Link from 'next/link';
 import React, { Fragment } from 'react';
-import { BlogItem } from './blog-card';
+import { BlogItem } from './blog-item';
 
-export function BlogList() {
-	const blogList: Blog[] = [
-		{
-			id: 1,
-			title: 'UI Interactions of the week',
-			publishedDate: '1657989568257',
-			tagList: ['Express', 'Handlebars'],
-			description:
-				'Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.',
-		},
-		{
-			id: 2,
-			title: 'UI Interactions of the week',
-			publishedDate: '1657989568257',
-			tagList: ['Express', 'Handlebars'],
-			description:
-				'Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.',
-		},
-		{
-			id: 3,
-			title: 'UI Interactions of the week',
-			publishedDate: '1657989568257',
-			tagList: ['Express', 'Handlebars'],
-			description:
-				'Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.',
-		},
-		{
-			id: 4,
-			title: 'UI Interactions of the week',
-			publishedDate: '1657989568257',
-			tagList: ['Express', 'Handlebars'],
-			description:
-				'Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.',
-		},
-	];
+export interface BlogListProps {
+	blogs: Blog[];
+}
 
+export function BlogList({ blogs }: BlogListProps) {
 	return (
 		<Box component={'section'} pt={2} pb={4}>
 			<Container>
 				<Typography component='h1' variant='h3' fontWeight='bold' mb={7}>
-					Blogs
+					Blog
 				</Typography>
-				<Stack spacing={4}>
-					{blogList.map((blog) => (
+				<Box component='ul' sx={{ listStyleType: 'none', p: 0 }}>
+					{blogs.map((blog) => (
 						<Fragment key={blog.id}>
-							<BlogItem blog={blog} />
-							<Divider sx={{ mt: 2, mb: 2 }} />
+							<Link href={`/blog/${blog.slug}`} key={blog.id} passHref>
+								<MuiLink>
+									<BlogItem blog={blog} />
+								</MuiLink>
+							</Link>
+							<Divider sx={{ my: 3 }} />
 						</Fragment>
 					))}
-				</Stack>
+				</Box>
 			</Container>
 		</Box>
 	);

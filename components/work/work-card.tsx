@@ -40,7 +40,7 @@ export function WorkCard({ work }: WorkCardProps) {
 						label={formatDate(work.createAt, 'yyyy')}
 						size='small'
 					/>
-					<Typography variant='body1' ml={3} color='GrayText'>{work.tagList.join(', ')}</Typography>
+					<Typography variant='body1' ml={3} color='info.main'>{work.tagList.join(', ')}</Typography>
 				</Stack>
 				<Typography variant='body2'>{work.shortDescription}</Typography>
 			</Box>

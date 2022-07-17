@@ -17,9 +17,12 @@ export let theme = createTheme({
 		error: {
 			main: red.A400,
 		},
+		info: {
+			main: '#8695A4'
+		},
 		text: {
 			primary: '#21243D',
-			secondary: '#00A8CC'
+			secondary: '#00A8CC',
 		}
 	},
 	components: {

@@ -6,7 +6,7 @@ import avatar from '@/images/avatar.png';
 
 export function HeroSection() {
 	return (
-		<Box component={'section'} pt={{ xs: 4, md: 18 }} pb={{ xs: 7, md: 9 }}>
+		<Box component={'section'} pt={{ xs: 4, md: 12 }} pb={{ xs: 7, md: 9 }}>
 			<Container>
 				<Stack
 					direction={{ xs: 'column-reverse', md: 'row' }}

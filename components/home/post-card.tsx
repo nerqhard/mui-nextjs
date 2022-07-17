@@ -1,10 +1,11 @@
-import { Post } from '@/models';
+import { Blog, Post } from '@/models';
 import { formatDate } from '@/utils';
 import { Card, CardContent, Divider, Stack, Typography } from '@mui/material';
 import * as React from 'react';
+import { BlogItem } from '../blog';
 
 export interface PostCardProps {
-	post: Post;
+	post: Blog;
 }
 
 export function PostCard({ post }: PostCardProps) {
@@ -13,15 +14,7 @@ export function PostCard({ post }: PostCardProps) {
 	return (
 		<Card>
 			<CardContent>
-				<Typography variant='h5' fontWeight='bold'>
-					{post.title}
-				</Typography>
-				<Stack direction={'row'} my={2}>
-					<Typography variant='body1'>{formatDate(post.publishedDate)}</Typography>
-					<Divider orientation='vertical' sx={{ mx: 2 }} flexItem />
-					<Typography variant='body1'>{post.tagList?.join(', ')}</Typography>
-				</Stack>
-				<Typography variant='body2'>{post.description}</Typography>
+				<BlogItem blog={post} />
 			</CardContent>
 		</Card>
 	);

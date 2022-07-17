@@ -13,8 +13,8 @@ export function FeaturedWorks() {
 			shortDescription:
 				'Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.',
 			fullDescription: 'string',
-			createAt: '1657989568257',
-			updateAt: '1657989568257',
+			createAt: '2022-07-17T04:04:51.904Z',
+			updateAt: '2022-07-17T04:04:51.904Z',
 			thumbnailUrl:
 				'https://res.cloudinary.com/dp1p2h0rz/image/upload/v1657992601/mui-nextjs/img3_g01ogn.jpg',
 		},
@@ -25,8 +25,8 @@ export function FeaturedWorks() {
 			shortDescription:
 				'Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.',
 			fullDescription: 'string',
-			createAt: '1657989568257',
-			updateAt: '1657989568257',
+			createAt: '2022-07-17T04:04:51.904Z',
+			updateAt: '2022-07-17T04:04:51.904Z',
 			thumbnailUrl:
 				'https://res.cloudinary.com/dp1p2h0rz/image/upload/v1657992601/mui-nextjs/img1_wocujy.jpg',
 		},
@@ -37,8 +37,8 @@ export function FeaturedWorks() {
 			shortDescription:
 				'Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.',
 			fullDescription: 'string',
-			createAt: '1657989568257',
-			updateAt: '1657989568257',
+			createAt: '2022-07-17T04:04:51.904Z',
+			updateAt: '2022-07-17T04:04:51.904Z',
 			thumbnailUrl:
 				'https://res.cloudinary.com/dp1p2h0rz/image/upload/v1657992601/mui-nextjs/img2_nn6arh.jpg',
 		},
