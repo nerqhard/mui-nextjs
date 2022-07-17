@@ -25,9 +25,12 @@ export function HeroSection() {
 							Web Developer
 						</Typography>
 						<Typography variant='body1' mb={{ xs: 3.5, md: 5 }}>
-							Amet minim mollit non deserunt ullamco est sit aliqua dolor do
-							amet sint. Velit officia consequat duis enim velit mollit.
-							Exercitation veniam consequat sunt nostrud amet.
+							2+ years experienced React Developer with hands-on experience in
+							identifying web-based user interactions along with designing
+							implementing highly responsive user interface components by
+							deploying React concepts. Adept at monitoring &
+							maintaining front performance and troubleshooting & debugging the
+							same to bolster overall performance.
 						</Typography>
 						<Button variant='contained' size='large'>
 							Download Resume
