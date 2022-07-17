@@ -11,15 +11,20 @@ export function HeroSection() {
 				<Stack
 					direction={{ xs: 'column-reverse', md: 'row' }}
 					alignItems={{ xs: 'center', md: 'flex-start' }}
-          textAlign={{xs: 'center', md: 'left'}}
+					textAlign={{ xs: 'center', md: 'left' }}
 					spacing={8}
 				>
 					<Box>
-						<Typography component='h1' variant='h3' fontWeight='bold' mb={{xs: 3.5, md: 5}}>
+						<Typography
+							component='h1'
+							variant='h3'
+							fontWeight='bold'
+							mb={{ xs: 3.5, md: 5 }}
+						>
 							Hi, I am Quang Ha, <br />
 							Web Developer
 						</Typography>
-						<Typography variant='body1' mb={{xs: 3.5, md: 5}}>
+						<Typography variant='body1' mb={{ xs: 3.5, md: 5 }}>
 							Amet minim mollit non deserunt ullamco est sit aliqua dolor do
 							amet sint. Velit officia consequat duis enim velit mollit.
 							Exercitation veniam consequat sunt nostrud amet.

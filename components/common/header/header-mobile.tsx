@@ -48,7 +48,7 @@ export function HeaderMobile(props: HeaderMobileProps) {
 					}}
 				>
 					{ROUTE_LIST.map((route) => (
-						<MenuItem key={route.path}>
+						<MenuItem key={route.path} onClick={handleClose}>
 							<Link key={route.path} href={route.path} passHref>
 								<MuiLink
 									className={clsx({ active: router.pathname === route.path })}
