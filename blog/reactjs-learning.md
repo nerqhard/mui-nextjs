@@ -151,15 +151,6 @@ Một số điều bạn cần lưu ý khi làm việc với routing:
 - Thường các file api sẽ được đặt trong 1 folder tên là `api`
 - Lựa chọn 1 http client: thường là `axios`, còn trường hợp project nhỏ, đơn giản thì có thể dùng `fetch` cũng được. Fetch tiện cái là `ko cần cài thêm thư viện`. Còn axios thì phải cài thêm package `axios` nhen.
 
-```
-api
-|__ axiosClient.js hoặc fetchClient.js: config http client và cung cấp các phương thức get, post, put, ...
-|__ productApi.js
-|__ categoryApi.js
-|__ userApi.js
-|__ ... cứ mỗi một resource sẽ có một file API tương ứng 😉
-```
-
 - Sắp tới sẽ có video giải thích về API module này. Mình bổ sung link sau hen hihi 
 
 ### 6. Hooks

@@ -17,7 +17,8 @@ desc: 'Khi nhắc tới git có khá là nhiều lệnh khác nhau, tuy nhiên t
 ## 1. Lấy code mới nhất trên branch develop
 
 ```sh
-git checkout develop # switch sang nhánh develop
+git checkout develop 
+# switch sang nhánh develop
 
 git pull # lấy code mới nhất về
 ```
@@ -44,7 +45,8 @@ CODING CHANGES 😎
 ```sh
 git add . # chấp nhận tất cả changes
 
-git stash # save tất cả code changes vào stash (kiểu nơi giữ code tạm)
+git stash # save all code changes 
+            vào stash
 
 git pull  # lấy code mới nhất về
 ```
@@ -52,7 +54,7 @@ git pull  # lấy code mới nhất về
 ## 4. Tạo nhánh cho code changes của mình
 
 ```sh
-git checkout -b feature/123-add-address-ui
+git checkout -b feature/xyz
 ```
 
 ## 5. Lấy code từ trong stash ra (hùi nảy lưu bằng git stash)
@@ -84,7 +86,7 @@ git commit -m "[123] Add address ui
 ## 7. Push code lên remote repository (Github, Gitlab, Bitbucket, ...)
 
 ```sh
-git push -u origin feature/123-address-ui 
+git push -u origin feature/xyz 
 ```
 
 ## Cuối cùng, lên remote repo tạo PR/MR vào nhánh develop. Xong nhờ lead review thôi hehe 
